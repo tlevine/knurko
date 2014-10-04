@@ -1,1 +1,6 @@
 #!/usr/bin/env python3
+from knurko import knurko
+from knurko.cli import cli
+
+args = cli.parse_args()
+knurko(args.filename)
