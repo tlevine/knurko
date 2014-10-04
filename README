@@ -13,5 +13,7 @@ The video will open in mplayer.
 The video will stop, and the number of the frame that you
 have chosen will be printed to stdout.
 
-And since the video is playing in mplayer, you may also use any of
-mplayer's interactive controls.
+And since the video is playing in mplayer, you may also use
+any of mplayer's interactive controls.
+
+You need to have mplayer installed in order to use knurko.
