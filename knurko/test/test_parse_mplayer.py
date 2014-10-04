@@ -1,3 +1,7 @@
+import nose.tools as n
+
+from ..parse_mplayer import parse_mplayer
+
 TESTCASES = [
     (131, 'A:   4.3 V:   4.3 A-V:  0.000 ct:  0.014 131/131 12%  6%  1.2% 1 0 \x1b[J'),
     (132, 'A:   4.4 V:   4.4 A-V:  0.000 ct:  0.014 132/132 12%  6%  1.2% 1 0 \x1b[J'),
@@ -24,4 +28,4 @@ def check_parse_mplayer(expectation, stdout_line):
 
 def test_parse_mplayer():
     for expectation, stdout_line in TESTCASES:
-        yield check_parse_mplayer, expectatiion, stdout_line
+        yield check_parse_mplayer, expectation, stdout_line
