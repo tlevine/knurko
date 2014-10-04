@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import subprocess as sp
 
 bill = sp.Popen(['mplayer', '/home/tlevine/Bill Nye the Science Guy/Water Cycle.avi'], stdout = sp.PIPE, stderr = sp.PIPE)
