@@ -2,8 +2,7 @@
 import sys
 
 sys.path.append('.')
-from knurko import knurko
-from knurko.cli import cli
+from knurko import knurko, cli
 
 args = cli.parse_args()
 try:

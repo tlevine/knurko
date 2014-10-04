@@ -1,3 +1,4 @@
+import os
 from setuptools import setup
 
 setup(
@@ -9,6 +10,7 @@ setup(
     url = 'http://small.dada.pink/knurko',
     license = 'AGPL',
     scripts = [os.path.join('bin', 'knurko')],
+    packages = ['knurko'],
     tests_require = [
         'nose>=1.3.4',
     ],
