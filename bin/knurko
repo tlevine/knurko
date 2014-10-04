@@ -7,7 +7,9 @@ from knurko.cli import cli
 
 args = cli.parse_args()
 try:
-    knurko(args.filename)
+    frame_number = knurko(args.filename)
 except ValueError as e:
     sys.stderr.write(e + '\n')
     sys.exit(1)
+else:
+    sys.stdout.write('%d\n' % frame_number)
